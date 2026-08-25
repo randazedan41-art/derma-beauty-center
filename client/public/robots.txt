@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dermabeauty-iiowugvf.manus.space/sitemap.xml
