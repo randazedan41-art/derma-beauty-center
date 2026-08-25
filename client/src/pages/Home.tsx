@@ -13,6 +13,7 @@ import {
   Facebook,
   Instagram,
   Menu,
+  MapPin,
   MessageCircle,
   Phone,
   ShieldCheck,
@@ -87,8 +88,8 @@ export default function Home() {
           <a href="#الرئيسية" className="brand" aria-label="ديرما - الرئيسية">
             <img src="/manus-storage/derma-symbol_711e3b0a.png" alt="رمز ديرما" className="brand-mark" />
             <span className="brand-copy">
-              <strong>ديرما</strong>
-              <span>مركز الجلدية والتجميل</span>
+              <strong dir="ltr">DR Randa Zidan</strong>
+              <span>عيادة الجلدية والتجميل والليزر</span>
             </span>
           </a>
 
@@ -228,7 +229,11 @@ export default function Home() {
             <div className="doctor-copy">
               <p className="section-kicker">من الاستشارة إلى المتابعة</p>
               <h2>تفاصيلك تستحق<br /><em>رأيًا متخصصًا.</em></h2>
-              <p className="doctor-description">في مركز ديرما، الاستشارة ليست خطوة سريعة قبل الجلسة. هي وقت مُخصص لفهم ما يزعجك، ومناقشة الخيارات بأمانة، وبناء قرار يناسبك أنت.</p>
+              <p className="doctor-description">في عيادة <b dir="ltr">DR Randa Zidan</b>، الاستشارة ليست خطوة سريعة قبل الجلسة. هي وقت مُخصص لفهم ما يزعجك، ومناقشة الخيارات بأمانة، وبناء قرار يناسبك أنت.</p>
+              <div className="doctor-identity-card">
+                <div className="portrait-placeholder" aria-label="موضع صورة د. رندا الشخصية"><span>صورة</span><strong dir="ltr">DR<br />RANDA</strong></div>
+                <p><strong dir="ltr">DR Randa Zidan</strong><small>استشاري جلدية وتناسلية وتجميل</small></p>
+              </div>
               <div className="doctor-points">
                 <div><span><Check size={15} /></span><p><strong>أولوية للتشخيص</strong><small>نبدأ بفهم الحالة قبل اقتراح أي إجراء.</small></p></div>
                 <div><span><Check size={15} /></span><p><strong>توقعات واضحة</strong><small>نناقش المسار والنتائج الممكنة بواقعية.</small></p></div>
@@ -264,8 +269,9 @@ export default function Home() {
               <h2>لنتحدث عن<br /><em>ما يناسبك.</em></h2>
               <p>أرسلي طلبًا مبدئيًا، وسيُنسّق فريقنا معك الوقت والخدمة المناسبة قبل تأكيد الموعد.</p>
               <div className="booking-contact">
-                <a href="tel:+201000000000"><span><Phone size={17} /></span> +20 100 000 0000</a>
-                <a href="https://wa.me/201000000000" target="_blank" rel="noreferrer"><span><MessageCircle size={17} /></span> تواصلي عبر واتساب</a>
+                <a href="tel:+201005587321"><span><Phone size={17} /></span> 01005587321</a>
+                <a href="https://wa.me/201005587321" target="_blank" rel="noreferrer"><span><MessageCircle size={17} /></span> تواصلي عبر واتساب</a>
+                <span className="address-line"><span><MapPin size={17} /></span> شيراتون المطار</span>
               </div>
             </div>
             <form className="booking-form" onSubmit={handleBooking}>
@@ -286,14 +292,14 @@ export default function Home() {
 
       <footer className="site-footer">
         <div className="container footer-main">
-          <a href="#الرئيسية" className="brand brand--footer" aria-label="ديرما - الرئيسية">
+          <a href="#الرئيسية" className="brand brand--footer" aria-label="DR Randa Zidan - الرئيسية">
             <img src="/manus-storage/derma-symbol_711e3b0a.png" alt="رمز ديرما" className="brand-mark" />
-            <span className="brand-copy"><strong>ديرما</strong><span>مركز الجلدية والتجميل</span></span>
+            <span className="brand-copy"><strong dir="ltr">DR Randa Zidan</strong><span>عيادة الجلدية والتجميل والليزر</span></span>
           </a>
-          <div className="footer-hours"><Clock3 size={17} /><span>السبت — الخميس <strong>11 ص — 8 م</strong></span></div>
+          <div className="footer-contact"><span className="footer-hours"><Clock3 size={17} /> مواعيد الزيارة بالتنسيق المسبق</span><span className="footer-hours"><MapPin size={17} /> شيراتون المطار</span></div>
           <div className="social-links"><a href="#" aria-label="إنستغرام"><Instagram size={19} /></a><a href="#" aria-label="فيسبوك"><Facebook size={19} /></a></div>
         </div>
-        <div className="container footer-bottom"><span>© 2026 مركز ديرما. جميع الحقوق محفوظة.</span><span>رعاية جلدية · تجميل · ليزر</span></div>
+        <div className="container footer-bottom"><span>© 2026 DR Randa Zidan. جميع الحقوق محفوظة.</span><span>جلدية · تجميل · ليزر</span></div>
       </footer>
     </div>
   );
